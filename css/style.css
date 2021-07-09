@@ -77,12 +77,12 @@ a {
 }
 .nav .my-name {
   transition: all 0.3s;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
 }
 .nav .my-name img {
-  width: 30px;
+  width: 50px;
   margin-right: 0.5rem;
 }
 .nav .my-name a {
@@ -104,7 +104,7 @@ a {
   color: #fff;
   display: inline-block;
   transition: all 0.3s;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
 }
 .nav__items li a:hover {
   color: #0984e3;
@@ -116,6 +116,30 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+.header .header-img {
+  position: absolute;
+  width: 550px;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  animation-name: zoomInDown;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s;
+  /* don't forget to set a duration! */
+}
+@media only screen and (max-width: 1350px) {
+  .header .header-img {
+    width: 300px;
+    top: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header .header-img {
+    width: 250px;
+    top: 70%;
+  }
 }
 .header .down__arrow {
   position: absolute;
@@ -139,6 +163,7 @@ a {
   flex-direction: row;
   align-items: center;
   height: 100%;
+  width: 1660px;
 }
 .header .lotto-wrapper {
   position: absolute;
@@ -175,20 +200,20 @@ a {
 }
 .header .main__title .main__headings h1 {
   font-family: "RocknRoll One", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 .header .main__title .main__headings h2 {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   animation: moveInRight 1s ease-out;
 }
 .header .main__buttons {
   margin-top: 1rem;
   display: flex;
   align-items: flex-start;
-  font-size: 1.1rem;
+  font-size: 1.75rem;
 }
 .header .main__buttons > * {
   border: 3px solid #0984e3;
@@ -363,6 +388,7 @@ a {
   border-top: 3px solid #0984e3;
   padding: 0.5rem 0;
   width: fit-content;
+  display: table;
   margin: 1rem auto;
   color: #022f52;
 }
@@ -441,6 +467,7 @@ a {
 }
 .my-work .container .gallery__paragraph {
   border-bottom: 5px solid #0984e3;
+  display: table;
   width: fit-content;
   padding-bottom: 0.5rem;
 }
@@ -639,8 +666,10 @@ a {
   margin-bottom: 1rem;
   color: #000;
   text-shadow: 1px 1px 4px #3b87ca90;
-  border-bottom: 3px solid #0984e3;
+  border-bottom: 5px solid #0984e3;
+  border-bottom-style: dotted;
   padding-bottom: 0.5rem;
+  display: table;
   width: fit-content;
 }
 
@@ -761,7 +790,7 @@ a {
     color: #fff !important;
     display: inline-block;
     transition: all 0.3s;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 }
 @media only screen and (max-width: 660px) and (max-width: 600px) {
@@ -886,8 +915,10 @@ a {
     margin-bottom: 1rem;
     color: #000;
     text-shadow: 1px 1px 4px #3b87ca90;
-    border-bottom: 3px solid #0984e3;
+    border-bottom: 5px solid #0984e3;
+    border-bottom-style: dotted;
     padding-bottom: 0.5rem;
+    display: table;
     width: fit-content;
   }
   .my-work .container .clickme {
@@ -921,8 +952,10 @@ a {
     margin-bottom: 1rem;
     color: #000;
     text-shadow: 1px 1px 4px #3b87ca90;
-    border-bottom: 3px solid #0984e3;
+    border-bottom: 5px solid #0984e3;
+    border-bottom-style: dotted;
     padding-bottom: 0.5rem;
+    display: table;
     width: fit-content;
   }
   .contact__form .form .btn {

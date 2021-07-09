@@ -86,11 +86,11 @@ a {
   }
   .my-name {
     transition: all 0.3s;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     img {
-      width: 30px;
+      width: 50px;
       margin-right: 0.5rem;
     }
     a {
@@ -115,7 +115,7 @@ a {
         color: #fff;
         display: inline-block;
         transition: all 0.3s;
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         &:hover {
           color: $primary-color;
         }
@@ -126,6 +126,29 @@ a {
 
 .header {
   position: relative;
+
+  .header-img {
+    position: absolute;
+    width: 550px;
+    // font-size: 30rem;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    // opacity: 0.7;
+    transition: all 0.3s;
+
+    animation-name: zoomInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+
+    @media only screen and (max-width: 1350px) {
+      width: 300px;
+      top: 70%;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 250px;
+      top: 70%;
+    }
+  }
 
   // .circle {
   //   position: absolute;
@@ -187,6 +210,7 @@ a {
     flex-direction: row;
     align-items: center;
     height: 100%;
+    width: 1660px;
   }
 
   .lotto-wrapper {
@@ -239,16 +263,17 @@ a {
       }
       h1 {
         font-family: "RocknRoll One", sans-serif;
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         animation-name: moveInLeft;
         animation-duration: 1s;
+
         // animation-delay: 3s;
         // animation-iteration-count: 3;
         animation-timing-function: ease-out;
       }
       h2 {
         // letter-spacing: 3px;
-        font-size: 1.5rem;
+        font-size: 2.3rem;
         animation: moveInRight 1s ease-out;
         // animation-delay: 1s;
       }
@@ -258,7 +283,7 @@ a {
     margin-top: 1rem;
     display: flex;
     align-items: flex-start;
-    font-size: 1.1rem;
+    font-size: 1.75rem;
 
     & > * {
       border: 3px solid $primary-color;
@@ -451,6 +476,7 @@ a {
       border-top: 3px solid $primary-color;
       padding: 0.5rem 0;
       width: fit-content;
+      display: table;
       margin: 1rem auto;
       color: #022f52;
 
@@ -541,6 +567,7 @@ a {
     }
     .gallery__paragraph {
       border-bottom: 5px solid $primary-color;
+      display: table;
       width: fit-content;
       padding-bottom: 0.5rem;
       a {
@@ -747,8 +774,10 @@ a {
   margin-bottom: 1rem;
   color: #000;
   text-shadow: 1px 1px 4px #3b87ca90;
-  border-bottom: 3px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
+  border-bottom-style: dotted;
   padding-bottom: 0.5rem;
+  display: table;
   width: fit-content;
 }
 
@@ -887,7 +916,7 @@ a {
         color: #fff !important;
         display: inline-block;
         transition: all 0.3s;
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         @media only screen and (max-width: 600px) {
           font-size: 0.9rem !important;
         }
