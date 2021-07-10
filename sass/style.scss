@@ -79,6 +79,10 @@ a {
       display: none;
       width: 35px;
       height: 35px;
+
+      @media only screen and (max-width: 400px) {
+        width: 30px;
+      }
     }
     .close {
       display: none;
@@ -136,7 +140,6 @@ a {
     transform: translateY(-50%);
     // opacity: 0.7;
     transition: all 0.3s;
-
     animation-name: zoomInDown; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
 
@@ -145,8 +148,25 @@ a {
       top: 70%;
     }
     @media only screen and (max-width: 600px) {
-      width: 250px;
+      width: 230px;
       top: 70%;
+    }
+    @media only screen and (max-width: 550px) {
+      width: 200px;
+      top: 70%;
+    }
+    @media only screen and (max-height: 600px) {
+      width: 250px;
+    }
+    @media only screen and (max-width: 450px) {
+      width: 150px;
+      top: 75%;
+      left: 60%;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 130px;
+      top: 75%;
+      left: 50%;
     }
   }
 
@@ -192,12 +212,23 @@ a {
     left: 50%;
     transform: translateX(-50%);
     animation: MoveUpDown 1s linear infinite;
+
+    @media only screen and (max-width: 768px) {
+      width: 50px;
+    }
+
+    @media only screen and (max-height: 600px) {
+      width: 60px;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 40px;
+    }
   }
 
   @keyframes MoveUpDown {
     0%,
     100% {
-      bottom: 50px;
+      bottom: 25px;
     }
     50% {
       bottom: 0;
@@ -251,6 +282,9 @@ a {
   .main__title {
     color: #fff;
     font-size: 1.5rem;
+    @media only screen and (max-height: 600px) {
+      font-size: 1rem;
+    }
     // position: absolute;
     // top: 50%;
     // transform: translateY(-50%);
@@ -266,6 +300,9 @@ a {
         font-size: 2.7rem;
         animation-name: moveInLeft;
         animation-duration: 1s;
+        @media only screen and (max-height: 600px) {
+          font-size: 2rem;
+        }
 
         // animation-delay: 3s;
         // animation-iteration-count: 3;
@@ -274,6 +311,9 @@ a {
       h2 {
         // letter-spacing: 3px;
         font-size: 2.3rem;
+        @media only screen and (max-height: 600px) {
+          font-size: 1.7rem;
+        }
         animation: moveInRight 1s ease-out;
         // animation-delay: 1s;
       }
@@ -297,12 +337,16 @@ a {
       animation-delay: 0.5s;
       animation-fill-mode: backwards;
 
+      @media only screen and (max-height: 600px) {
+        font-size: 1.25rem;
+      }
+
       @media only screen and (max-width: 600px) {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0.6rem 0.8rem;
       }
       @media only screen and (max-width: 400px) {
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 0.4rem 0.6rem;
       }
       &:not(:last-child) {
@@ -830,7 +874,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 768px) {
   h2 {
     font-size: 1.7rem !important;
   }
@@ -869,6 +913,14 @@ a {
     }
     .my-name {
       font-size: 1.5rem;
+
+      @media only screen and (max-width: 400px) {
+        font-size: 1.3rem;
+
+        img {
+          width: 30px;
+        }
+      }
     }
     &__items {
       position: absolute;
@@ -942,10 +994,10 @@ a {
           font-size: 1.3rem !important;
 
           @media only screen and (max-width: 420px) {
-            font-size: 1rem !important;
+            font-size: 1.3rem !important;
           }
           @media only screen and (max-width: 320px) {
-            font-size: 0.8rem !important;
+            font-size: 1.15rem !important;
           }
         }
         h1 {
@@ -956,7 +1008,7 @@ a {
             font-size: 1.5rem !important;
           }
           @media only screen and (max-width: 320px) {
-            font-size: 1.1rem !important;
+            font-size: 1.2rem !important;
           }
         }
         span.salam {
