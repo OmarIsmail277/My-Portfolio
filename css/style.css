@@ -125,7 +125,7 @@ a {
 .header .header-img {
   position: absolute;
   width: 550px;
-  right: 5%;
+  right: 2%;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
@@ -140,13 +140,13 @@ a {
     top: 70%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .header .header-img {
     width: 230px;
     top: 70%;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .header .header-img {
     width: 200px;
     top: 70%;
@@ -196,10 +196,10 @@ a {
 }
 @keyframes MoveUpDown {
   0%, 100% {
-    bottom: 25px;
+    bottom: 35px;
   }
   50% {
-    bottom: 0;
+    bottom: 10px;
   }
 }
 .header .container {
