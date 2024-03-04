@@ -117,7 +117,13 @@ a {
 
 .header {
   position: relative;
-  background-image: linear-gradient(to right, rgba(29, 30, 38, 0.8), rgba(29, 30, 38, 0.6), rgba(29, 30, 38, 0.4)), url(../img/hero1.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(29, 30, 38, 0.8),
+      rgba(29, 30, 38, 0.6),
+      rgba(29, 30, 38, 0.4)
+    ),
+    url(../img/hero1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -195,7 +201,8 @@ a {
   }
 }
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 35px;
   }
   50% {
@@ -377,7 +384,7 @@ a {
   }
 }
 .about .container .about__me-left p {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.593);
   line-height: 1.5;
@@ -396,6 +403,7 @@ a {
   color: #fff;
   transition: all 0.3s;
   margin-top: 1rem;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
   .about .container .about__me-left .my-resume {
@@ -726,7 +734,9 @@ a {
   font-size: 0.75rem;
 }
 
-.skills .container .skills__heading, .my-work .container .mywork__heading, .contact__form h2 {
+.skills .container .skills__heading,
+.my-work .container .mywork__heading,
+.contact__form h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #000;
@@ -784,16 +794,16 @@ a {
   }
 
   .footer .main__links a .fm_logo,
-.footer .main__links a svg,
-.header .main__links a .fm_logo,
-.header .main__links a svg {
+  .footer .main__links a svg,
+  .header .main__links a .fm_logo,
+  .header .main__links a svg {
     width: 35px;
     height: 35px;
   }
 }
 @media only screen and (max-width: 768px) and (max-width: 420px) {
   .header .main__links a .fm_logo,
-.header .main__links a svg {
+  .header .main__links a svg {
     width: 30px;
     height: 30px;
   }
