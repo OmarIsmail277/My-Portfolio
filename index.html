@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon (5).ico">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./img/favicon (5).ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>OmarIsmail Portfolio</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="nav">
-      <h1 class="my-name"><img src="./img/coding.svg" alt=""><a href="./index.html">Omar Ismail</a></h1>
+      <h1 class="my-name">
+        <img src="./img/coding.svg" alt="" /><a href="./index.html"
+          >Omar Ismail</a
+        >
+      </h1>
       <ul id="panel" class="nav__items">
-        <li onclick="myFunction()" ><a href="#about">About</a></li>
+        <li onclick="myFunction()"><a href="#about">About</a></li>
         <li>
           <a target="_blank" href="https://omar-ismail-gallery.netlify.app/"
             >My Work</a
@@ -27,17 +35,27 @@
         <li onclick="myFunction()"><a href="#contact">Contact</a></li>
       </ul>
       <div class="burger-menu">
-          <img id="menu" class="menu"   src="./img/square.svg" alt="burger-icon">
-          <img id="close" class="close" src="./img/icon-close.svg" alt="burger-icon">
+        <img id="menu" class="menu" src="./img/square.svg" alt="burger-icon" />
+        <img
+          id="close"
+          class="close"
+          src="./img/icon-close.svg"
+          alt="burger-icon"
+        />
       </div>
     </nav>
     <!-- Header -->
     <header id="header" class="header">
-      <img class="header-img" src="./img/welcome.svg" alt="image">
+      <img class="header-img" src="./img/welcome.svg" alt="image" />
       <!-- <div class="header-img">💻</div> -->
       <!-- <div class="circle"></div> -->
       <a href="#about" class="img__container">
-      <img id="downArrow" class="down__arrow" src="./img/down-arrow.svg" alt="">
+        <img
+          id="downArrow"
+          class="down__arrow"
+          src="./img/down-arrow.svg"
+          alt=""
+        />
       </a>
       <div class="container">
         <!-- <div class="lotto-wrapper">
@@ -45,11 +63,18 @@
         </div> -->
         <div class="main__title">
           <div class="main__headings">
-            <h1><span class="salam">Welcome! 👋</span> My name is Omar Ismail.</h1>
+            <h1>
+              <span class="salam">Welcome! 👋</span> My name is Omar Ismail.
+            </h1>
             <h2>I'm a Frontend Developer.</h2>
           </div>
           <div class="main__buttons">
-            <a target="_blank" class="mywork-btn" href="https://omar-ismail-gallery.netlify.app/">My Work</a>
+            <a
+              target="_blank"
+              class="mywork-btn"
+              href="https://omar-ismail-gallery.netlify.app/"
+              >My Work</a
+            >
             <a class="contact-btn" href="#contact">Contact</a>
           </div>
           <div class="main__links">
@@ -81,7 +106,7 @@
             <a
               target="_blank"
               class="linkedin-icon"
-              href="https://www.linkedin.com/in/omar-ahmed-a75848183/"
+              href="https://www.linkedin.com/in/omar-ahmed-ismail/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,12 +128,16 @@
                 ></path>
               </svg>
             </a>
-             <a
+            <a
               target="_blank"
               class="linkedin-icon"
               href="https://www.frontendmentor.io/profile/OmarIsmail277"
             >
-           <img class="fm_logo" src="./img/frontendmentor_logo.png" alt="frontendmentor_logo">
+              <img
+                class="fm_logo"
+                src="./img/frontendmentor_logo.png"
+                alt="frontendmentor_logo"
+              />
             </a>
           </div>
         </div>
@@ -120,7 +149,18 @@
         <div class="about__me">
           <div class="about__me-left">
             <p>
-              As a recent graduate from the University of Alexandria with a Bachelor of Science in <span>Computer & Communication</span> Engineering, I bring a creative and energetic approach to <span>Frontend Developement</span>. I'm passionate about crafting websites that not only function seamlessly but also captivate users with vibrant designs and joyful animations. With a self-driven attitude and a love for learning, I'm constantly exploring new technologies to enhance my skills. As a collaborative team player, I thrive in environments where innovative ideas are encouraged and teamwork is valued. Let's bring your vision to life together!
+              As a recent graduate from the University of Alexandria with a
+              Bachelor of Science in
+              <span>Computer & Communication</span> Engineering, I bring a
+              creative and energetic approach to
+              <span>Frontend Developement</span>. I'm passionate about crafting
+              websites that not only function seamlessly but also captivate
+              users with vibrant designs and joyful animations. With a
+              self-driven attitude and a love for learning, I'm constantly
+              exploring new technologies to enhance my skills. As a
+              collaborative team player, I thrive in environments where
+              innovative ideas are encouraged and teamwork is valued. Let's
+              bring your vision to life together!
             </p>
             <a target="_blank" class="my-resume" href="./resume/OmarResume.pdf"
               >My Resume!</a
@@ -235,98 +275,139 @@
     <!-- Contact -->
     <section id="contact" class="contact">
       <div class="container">
-          <div class="contact__form">
-            <p>Let's talk</p>
-            <h2>Contact Me</h2>
-            <form id="my-form" class="form" action="https://formspree.io/f/mnqoedbe" method="POST">
-                <div class="field" tabindex="1">
-                    <label for="fullname">Full Name:<span style="color: red;" class="star">*</span></label>
-                    <input name="fullname" type="text" placeholder="e.g. Mohamed Ahmed" required>
-                </div>
-                <div class="field" tabindex="2">
-                    <label for="email">Your Email:<span style="color: red;" class="star">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
-                </div>
-                <div class="field" tabindex="3">
-                    <label for="message">Your Message:<span style="color: red;" class="star">*</span></label>
-                    <textarea name="message" placeholder="Type here..." required></textarea>
-                </div>
-                <button class="btn" type="submit">Send Message</button>
-            </form>
-            <div id="status" class=""></div>
-            <h2 class="or">- OR -</h2>
-            <h2 class="my-email">omar.ismail277@gmail.com</h2>
+        <div class="contact__form">
+          <p>Let's talk</p>
+          <h2>Contact Me</h2>
+          <form
+            id="my-form"
+            class="form"
+            action="https://formspree.io/f/mnqoedbe"
+            method="POST"
+          >
+            <div class="field" tabindex="1">
+              <label for="fullname"
+                >Full Name:<span style="color: red" class="star">*</span></label
+              >
+              <input
+                name="fullname"
+                type="text"
+                placeholder="e.g. Mohamed Ahmed"
+                required
+              />
+            </div>
+            <div class="field" tabindex="2">
+              <label for="email"
+                >Your Email:<span style="color: red" class="star"
+                  >*</span
+                ></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
+            <div class="field" tabindex="3">
+              <label for="message"
+                >Your Message:<span style="color: red" class="star"
+                  >*</span
+                ></label
+              >
+              <textarea
+                name="message"
+                placeholder="Type here..."
+                required
+              ></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+          <div id="status" class=""></div>
+          <h2 class="or">- OR -</h2>
+          <h2 class="my-email">omar.ismail277@gmail.com</h2>
         </div>
         <div class="contact__picture">
-            <img src="./img/forms.svg" alt="Forms Image">
+          <img src="./img/forms.svg" alt="Forms Image" />
         </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="main__links">
-                <a
-                target="_blank"
-                class="github-icon"
-                href="https://github.com/OmarIsmail277"
-                >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1.03em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1536 1504"
-                    class="iconify"
-                    data-inline="false"
-                    data-icon="fa:github"
-                    style="transform: rotate(360deg)"
-                >
-                    <path
-                    d="M768 0q209 0 385.5 103T1433 382.5T1536 768q0 251-146.5 451.5T1011 1497q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142q57-6 102.5-18t94-39t81-66.5t53-105T1258 728q0-119-79-206q37-91-8-204q-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T450 331.5T365 318q-45 113-8 204q-79 87-79 206q0 85 20.5 150T351 983t80.5 67t94 39t102.5 18q-39 36-49 103q-21 10-45 15t-57 5t-65.5-21.5T356 1146q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5t9 14t13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30t69.5 7t55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5T0 768q0-209 103-385.5T382.5 103T768 0zM291 1103q3-7-7-12q-10-3-13 2q-3 7 7 12q9 6 13-2zm31 34q7-5-2-16q-10-9-16-3q-7 5 2 16q10 10 16 3zm30 45q9-7 0-19q-8-13-17-6q-9 5 0 18t17 7zm42 42q8-8-4-19q-12-12-20-3q-9 8 4 19q12 12 20 3zm57 25q3-11-13-16q-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11q-16 0-16 11q0 13 17 11q16 0 16-11zm58-10q-2-11-18-9q-16 3-14 15t18 8t14-14z"
-                    fill="currentColor"
-                    ></path>
-                </svg>
-                </a>
-                <a
-                target="_blank"
-                class="linkedin-icon"
-                href="https://www.linkedin.com/in/omar-ahmed-a75848183/"
-                >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1536 1536"
-                    class="iconify"
-                    data-inline="false"
-                    data-icon="fa:linkedin-square"
-                    style="transform: rotate(360deg)"
-                >
-                    <path
-                    d="M237 1286h231V592H237v694zm246-908q-1-52-36-86t-93-34t-94.5 34t-36.5 86q0 51 35.5 85.5T351 498h1q59 0 95-34.5t36-85.5zm585 908h231V888q0-154-73-233t-193-79q-136 0-209 117h2V592H595q3 66 0 694h231V898q0-38 7-56q15-35 45-59.5t74-24.5q116 0 116 157v371zm468-998v960q0 119-84.5 203.5T1248 1536H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0h960q119 0 203.5 84.5T1536 288z"
-                    fill="currentColor"
-                    ></path>
-                </svg>
-                </a>
-                <a
-                target="_blank"
-                class="linkedin-icon"
-                href="https://www.frontendmentor.io/profile/OmarIsmail277"
-                >
-            <img class="fm_logo" src="./img/frontendmentor_logo.png" alt="frontendmentor_logo">
-                </a>
-          </div>
-          <p class="copyright"><span class="created">Created by Omar Ismail - Inspired From</span><a class="citation" href="https://miltonchung.com/">Milton Chung's</a> Portfolio Design</p>
-          <p>Copyright © 2021 - All Copyrights Reserved</p>
+      <div class="container">
+        <div class="main__links">
+          <a
+            target="_blank"
+            class="github-icon"
+            href="https://github.com/OmarIsmail277"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              focusable="false"
+              width="1.03em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 1536 1504"
+              class="iconify"
+              data-inline="false"
+              data-icon="fa:github"
+              style="transform: rotate(360deg)"
+            >
+              <path
+                d="M768 0q209 0 385.5 103T1433 382.5T1536 768q0 251-146.5 451.5T1011 1497q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142q57-6 102.5-18t94-39t81-66.5t53-105T1258 728q0-119-79-206q37-91-8-204q-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T450 331.5T365 318q-45 113-8 204q-79 87-79 206q0 85 20.5 150T351 983t80.5 67t94 39t102.5 18q-39 36-49 103q-21 10-45 15t-57 5t-65.5-21.5T356 1146q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5t9 14t13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30t69.5 7t55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5T0 768q0-209 103-385.5T382.5 103T768 0zM291 1103q3-7-7-12q-10-3-13 2q-3 7 7 12q9 6 13-2zm31 34q7-5-2-16q-10-9-16-3q-7 5 2 16q10 10 16 3zm30 45q9-7 0-19q-8-13-17-6q-9 5 0 18t17 7zm42 42q8-8-4-19q-12-12-20-3q-9 8 4 19q12 12 20 3zm57 25q3-11-13-16q-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11q-16 0-16 11q0 13 17 11q16 0 16-11zm58-10q-2-11-18-9q-16 3-14 15t18 8t14-14z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            class="linkedin-icon"
+            href="https://www.linkedin.com/in/omar-ahmed-ismail/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              focusable="false"
+              width="1em"
+              height="1em"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 1536 1536"
+              class="iconify"
+              data-inline="false"
+              data-icon="fa:linkedin-square"
+              style="transform: rotate(360deg)"
+            >
+              <path
+                d="M237 1286h231V592H237v694zm246-908q-1-52-36-86t-93-34t-94.5 34t-36.5 86q0 51 35.5 85.5T351 498h1q59 0 95-34.5t36-85.5zm585 908h231V888q0-154-73-233t-193-79q-136 0-209 117h2V592H595q3 66 0 694h231V898q0-38 7-56q15-35 45-59.5t74-24.5q116 0 116 157v371zm468-998v960q0 119-84.5 203.5T1248 1536H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0h960q119 0 203.5 84.5T1536 288z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            class="linkedin-icon"
+            href="https://www.frontendmentor.io/profile/OmarIsmail277"
+          >
+            <img
+              class="fm_logo"
+              src="./img/frontendmentor_logo.png"
+              alt="frontendmentor_logo"
+            />
+          </a>
         </div>
-	</footer>
+        <p class="copyright">
+          <span class="created">Created by Omar Ismail - Inspired From</span
+          ><a class="citation" href="https://miltonchung.com/"
+            >Milton Chung's</a
+          >
+          Portfolio Design
+        </p>
+        <p>Copyright © 2021 - All Copyrights Reserved</p>
+      </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
