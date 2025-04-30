@@ -385,7 +385,7 @@ a {
   }
 }
 .about .container .about__me-left p {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.593);
   line-height: 1.5;
@@ -404,6 +404,7 @@ a {
   color: #fff;
   transition: all 0.3s;
   margin-top: 1rem;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
   .about .container .about__me-left .my-resume {
