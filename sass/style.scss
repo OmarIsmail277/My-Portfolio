@@ -620,6 +620,8 @@ a {
       }
 
       .project-card {
+        position: relative; // 👈 add this
+
         background: #fff;
         border-radius: 16px;
         overflow: hidden;
@@ -629,6 +631,46 @@ a {
         flex-direction: column;
         height: 100%;
         max-height: 600px;
+
+        &.featured {
+          border: 3px solid transparent;
+          border-radius: 16px;
+
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          animation: pulseBorder 3s infinite;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px $primary-color;
+            transition: 0.3s ease;
+          }
+
+          .ribbon {
+            position: absolute;
+            top: 55px;
+            left: -55px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(-45deg);
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        @keyframes pulseBorder {
+          0% {
+            box-shadow: 0 0 10px rgb(9, 132, 227, 0.6);
+          }
+          50% {
+            box-shadow: 0 0 25px rgb(9, 132, 227, 0.9);
+          }
+          100% {
+            box-shadow: 0 0 10px rgb(9, 132, 227, 0.6);
+          }
+        }
 
         &:hover {
           transform: translateY(-5px);

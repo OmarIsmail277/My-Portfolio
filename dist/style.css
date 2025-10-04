@@ -547,6 +547,7 @@ a {
   }
 }
 .my-work .container .featured-projects .project-card {
+  position: relative;
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -556,6 +557,41 @@ a {
   flex-direction: column;
   height: 100%;
   max-height: 600px;
+}
+.my-work .container .featured-projects .project-card.featured {
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: pulseBorder 3s infinite;
+}
+.my-work .container .featured-projects .project-card.featured:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0984e3;
+  transition: 0.3s ease;
+}
+.my-work .container .featured-projects .project-card.featured .ribbon {
+  position: absolute;
+  top: 55px;
+  left: -55px;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(-45deg);
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 10px rgba(9, 132, 227, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(9, 132, 227, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(9, 132, 227, 0.6);
+  }
 }
 .my-work .container .featured-projects .project-card:hover {
   transform: translateY(-5px);
